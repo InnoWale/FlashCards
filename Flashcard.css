@@ -1,0 +1,112 @@
+body{
+    margin: 0px;
+}
+header{
+    align-items: center;
+}
+#top-line{
+    background-color: hsl(180, 86%, 45%);
+    height: 10px;
+    width:auto;
+}
+.left-text{
+    margin-right: 0px;
+    margin-left: 30px;
+    font-family: Open+Sans;
+    text-align: start;
+    display: block;
+}
+
+.right-text{
+    text-align: end;
+    margin-right: 30px;
+    margin-left: auto;
+    display: block;
+
+}
+
+#shadow-box{
+    text-align: center;
+    display: block;
+}
+
+#border{
+    padding: 20px;
+    display: inline;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    background-color: orangered;
+    color: white;
+    font-size: 1.3em;
+    box-shadow: 0px 8px 10px red;
+}
+
+#Outerbox{
+    height: 200px;
+    width: 100%;
+}
+
+#Borderbox{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    border: 2px solid black;
+    height: 200px;
+    width: 400px;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+
+#Borderbox:hover{
+    transform: rotateY(180deg);
+}
+
+#question, #answer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+#question{
+    background-color: rgb(30, 148, 142);
+}
+
+#answer{
+    transform: rotateY(180deg);
+    background-color: rgb(32, 168, 93);
+}
+
+.button{
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+button{
+    height: 60px;
+    width: 120px;
+    color: antiquewhite;
+    font-size: 1.2em;
+    font-family: "Tsukimi Rounded", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: hsl(175, 56%, 54%);
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+button:hover{
+    transform: scale(1.06);
+    transition: 0.5s;
+    background-color: hsl(174, 48%, 35%);
+}
